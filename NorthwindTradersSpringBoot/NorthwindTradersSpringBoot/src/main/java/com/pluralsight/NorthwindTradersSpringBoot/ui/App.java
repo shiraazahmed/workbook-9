@@ -3,9 +3,10 @@ package com.pluralsight.NorthwindTradersSpringBoot.ui;
 import com.pluralsight.NorthwindTradersSpringBoot.models.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
 
 import java.util.Scanner;
-
+@Component
 public class App implements CommandLineRunner {
     @Autowired
     private ProductDao productDao;
@@ -25,10 +26,10 @@ public class App implements CommandLineRunner {
                     System.out.println(product);
                 }
             } else if (choice == 2) {
-                System.out.println("com.pluralsight.NorthwindTradersSpringBoot.models.Product Id ");
+                System.out.println("Product Id ");
                 int productId = scanner.nextInt();
                 scanner.nextLine();
-                System.out.println("com.pluralsight.NorthwindTradersSpringBoot.models.Product Name ");
+                System.out.println("Product Name ");
                 String productName = scanner.nextLine();
                 System.out.println("Category ");
                 String category = scanner.nextLine();
