@@ -1,5 +1,7 @@
 package com.pluralsight.demo.api.models;
 
+import java.math.BigDecimal;
+
 public class Product {
     private int productId;
     private String productName;
@@ -37,7 +39,7 @@ public class Product {
         this.categoryId = categoryId;
     }
 
-    public double getUnitPrice() {
+    public BigDecimal getUnitPrice() {
         return unitPrice;
     }
 
